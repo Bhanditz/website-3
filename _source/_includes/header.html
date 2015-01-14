@@ -9,24 +9,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+                <a class="navbar-brand" href="/en/">{{ site.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="/about">About</a>
+                        <a href="/en/about">About</a>
                     </li>
                     <li class="page-scroll">
-                    	<a href="/blog">Blog</a>
+                    	<a href="/en/blog">Blog</a>
                     	</li>
                     <li class="page-scroll">
-                    	<a href="/projects">Projects</a>
+                    	<a href="/en/projects">Projects</a>
                     	</li>
-                            <li class="page-scroll">
-                        <a href="/resources">Resources</a>
-                    </li>
+		    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/en/resources/archive/">Archive</a></li>
+            <li><a href="/en/resources/toolkits/">Toolkits</a></li>
+          </ul>
+        </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -38,4 +42,3 @@
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-`
